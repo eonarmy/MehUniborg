@@ -1,4 +1,4 @@
-""".admin Plugin for @UniBorg"""
+""".admin Plugin for @Userbot"""
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
@@ -9,7 +9,7 @@ from uniborg.util import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "` Jinda Hu Sarr ^.^ \nYour bot is running\n\nTelethon version: 6.9.0\nPython: 3.7.3\nfork by:` @DraXCommunity\n`Database Status: Databases functioning normally!`"
+    mentions = "` Jinda Hu Sir ^.^ \nYour bot is running\n\nTelethon version: 6.9.0\nPython: 3.7.3\nFork by:` @EONARMY\n`Database Status: Databases functioning normally!`"
     chat = await event.get_input_chat()
     async for x in borg.iter_participants(chat, filter=ChannelParticipantsAdmins):
         mentions += f""
