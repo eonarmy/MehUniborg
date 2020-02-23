@@ -16,10 +16,10 @@ borg.storage.PM_WARNS = {}
 borg.storage.PREV_REPLY_MESSAGE = {}
 
 
-BAALAJI_TG_USER_BOT = "`My Master hasn't approved you to PM. Don't spam me, tag him in @DraXCommunity`"
-TG_COMPANION_USER_BOT = "`Please wait for his response and don't spam his PM. Tag him in @DraXCommunity`"
-UNIBORG_USER_BOT_WARN_ZERO = "`I am currently offline. Please do not SPAM me. Contact @DraXCommunity`"
-UNIBORG_USER_BOT_NO_WARN = "`Hi! I will answer to your message soon. Please wait for my response and don't spam my PM. Tag me in @DraXCommunity`"
+BAALAJI_TG_USER_BOT = "`XHACKERKUN hasn't approved you to PM. **DON'T SPAM** with me,Tag me in @JOINEONARMY`"
+TG_COMPANION_USER_BOT = "`Please wait for his response and **DON'T SPAM** with me.Tag me in @JOINEONARMY`"
+UNIBORG_USER_BOT_WARN_ZERO = "`I am currently offline. Please **DON'T SPAM** with me.Madar Chod,Behen Chod,I fuck with your mom and sister`"
+UNIBORG_USER_BOT_NO_WARN = "`[~~~~~~~~~XHACKERKUNAL~~~~~~~~~]\n\nHello, I will answer to your message soon.\n\nPlease wait for my response and Please **DON'T SPAM** with me.\n\nTag me in @JOINEONARMY FOR GET FAST RESPONSE.`"
 
 
 @borg.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
@@ -69,7 +69,7 @@ async def approve_p_m(event):
                     await borg.storage.PREV_REPLY_MESSAGE[chat.id].delete()
                     del borg.storage.PREV_REPLY_MESSAGE[chat.id]
                 approve(chat.id, reason)
-                await event.edit("`This bitch can msg you Now!`")
+                await event.edit("`XHACKERKUNAL IS APPROVED YOU!`")
                 await asyncio.sleep(3)
                 await event.delete()
 
