@@ -1,4 +1,4 @@
-# For @UniBorg
+# For @XHACKERKUNAL
 # (c) Shrimadhav U K
 """Auto Profile Updation Commands `.autoname .autobio`"""
 
@@ -20,7 +20,7 @@ async def _(event):
     while True:
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M:%S")
-        bio = f"📅 {DMY} | @SkuzzyWorld Don't mess with me | ⌚️ {HM}"
+        bio = f"📅 {DMY} | IF YOU WANT YOUR USERBOT IN FREE SO DM @XHACKERKUNAL| ⌚️ {HM}"
         logger.info(bio)
         try:
             await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
@@ -44,7 +44,7 @@ async def _(event):
     if event.fwd_from:
         return
     while True:
-        bio = f"@SkuzzyWorld Don't mess with me"
+        bio = f"@EONARMY JOIN US"
         logger.info(bio)
         await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
             about=bio
@@ -59,7 +59,7 @@ async def _(event):
     while True:
         DM = time.strftime("%d.%m.%y")
         HM = time.strftime("%H:%M")
-        name = f"⌚{HM} | IN Skuzzy IN | 📅{DM}"
+        name = f"⌚{HM} | IN XHACKERKUNAL IN | 📅{DM}"
         logger.info(name)
         try:
             await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
@@ -83,7 +83,7 @@ async def _(event):
     if event.fwd_from:
         return
     while True:
-        name = f"IN Skuzzy IN"
+        name = f"IN XHACKERKUNAL IN"
         logger.info(name)
         await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
             first_name=name
