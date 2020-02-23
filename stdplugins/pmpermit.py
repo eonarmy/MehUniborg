@@ -1,8 +1,8 @@
 """Personal Message Spammer
 Available Commands:
-.pm
-.dis
-.block
+.approvehim
+.disapprovehim
+.blockhim
 .listpms"""
 import asyncio
 import json
@@ -54,7 +54,7 @@ async def monito_p_m_s(event):
             borg.storage.PREV_REPLY_MESSAGE[chat.id] = r
 
 
-@borg.on(admin_cmd("pm ?(.*)"))
+@borg.on(admin_cmd("approvehim ?(.*)"))
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -74,7 +74,7 @@ async def approve_p_m(event):
                 await event.delete()
 
 
-@borg.on(admin_cmd("block ?(.*)"))
+@borg.on(admin_cmd("blockhim ?(.*)"))
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -89,7 +89,7 @@ async def approve_p_m(event):
                 await borg(functions.contacts.BlockRequest(chat.id))
                 
                 
-@borg.on(admin_cmd("dis ?(.*)"))
+@borg.on(admin_cmd("disapprovehim ?(.*)"))
 async def approve_p_m(event):
     if event.fwd_from:
         return
